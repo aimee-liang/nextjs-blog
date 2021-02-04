@@ -30,17 +30,35 @@ const App = () => {
     'products', 
     fetchProducts
     )
-    // console.log(data)
 
     const getTotalItems = (items: CartItemType[]) => items.reduce((acc: number, item) => acc + item.amount, 0)
 
     const handleAddToCart = (clickedItem: CartItemType) => {
       setCartItems(previous => {
         const isItemInCart = previous.find(item => item.id === clickedItem.id)
+        if (isItemInCart){
+          return previous.map(item => (
+            item.id === clickedItem.id
+            ? {...item, amount: item.amount + 1}
+            : item
+          ))
+        }
+        return [...previous, {...clickedItem, amount: 1}]
       })
     }
 
-    const handleRemoveFromCart = () => null
+    const handleRemoveFromCart = (id: number) => {
+      setCartItems(previous => 
+        previous.reduce((acc, item) => {
+          if (item.id === id){
+            if (item.amount === 1) return acc
+            return [...acc, {...item, amount: item.amount - 1}]
+          } else {
+            return [...acc, item]
+          }
+        }, [] as CartItemType[])
+      )
+    }
 
     if (isLoading) return <LinearProgress/>
     if (error) return <div>Something's wrong!</div>

@@ -5,14 +5,13 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     flex-direction: column;
     width: 100%;
-    border: 1px solid light blue;
+    border: 1px solid lightblue;
     border-radius: 20px;
     height: 100%;
 
 
     button {
         border-radius 0 0 20px 20px;
-
     }
 
     img {

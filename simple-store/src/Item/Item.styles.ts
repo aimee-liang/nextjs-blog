@@ -24,5 +24,6 @@ export const Wrapper = styled.div`
         font-family: Arial;
         padding: 1rem;
         height: 100%;
+        overflow-wrap: break-word;
     }
 `

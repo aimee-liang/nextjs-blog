@@ -1,6 +1,4 @@
 import React, {useState} from 'react'
-import {useQuery} from "react-query"
-
 
 const CardInfo = () => {
 
@@ -19,6 +17,9 @@ const CardInfo = () => {
     return(
         <>
             {/* fetch api here */}
+            <div className="card-info-terminal">
+
+            </div>
         </>
     )
 }

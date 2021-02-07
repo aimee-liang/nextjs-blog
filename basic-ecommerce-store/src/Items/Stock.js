@@ -1,11 +1,15 @@
 import React from "react"
 import Item from "./Item.js"
 
-const Stock = () => {
+const Stock = (props) => {
+
+    const localUpdate = (item) => {
+        return props.UpdateTotal
+    }
     return (
         <>
             <div className="stock-page">
-                <Item/>
+                <Item onClick = {localUpdate}/>
             </div>
         </>
     )

@@ -7,11 +7,13 @@ import Stock from "./Items/Stock"
 function App() {
 
   const [total, setTotal] = useState([])
-  
+
+  const updateTotal = (item) => setTotal[item]
+
   return (
     <>
       <Logo/>
-      <Stock/>
+      <Stock updateTotal={updateTotal}/>
       <Cart/>
     </>
   );

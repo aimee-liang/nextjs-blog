@@ -1,6 +1,6 @@
 import React from "react"
 
-const Item = () => {
+const Item = (props) => {
 
     const randomPriceGenerator = Math.floor(Math.random() * 100) + 1
 
@@ -10,6 +10,7 @@ const Item = () => {
                 <h2>Jewelry Piece Name</h2>
                 <img src="" alt=""/>
                 <h5>${randomPriceGenerator}</h5>
+                <button onClick={props.localUpdate}>Click to purchase</button>
             </div>
         </>
     )

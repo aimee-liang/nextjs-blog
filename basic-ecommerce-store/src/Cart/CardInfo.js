@@ -18,7 +18,7 @@ const CardInfo = () => {
         <>
             {/* fetch api here */}
             <div className="card-info-terminal">
-
+                {/* need API keys */}
             </div>
         </>
     )

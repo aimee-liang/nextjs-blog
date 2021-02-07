@@ -1,6 +1,5 @@
 import React from "react"
 import Item from "./Item.js"
-import Cart from "../Cart/Cart"
 
 const Stock = () => {
     return (

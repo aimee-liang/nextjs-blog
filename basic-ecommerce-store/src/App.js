@@ -4,7 +4,7 @@ import Logo from "Logo"
 import Cart from "./Cart/Cart"
 import Stock from "./Items/Stock"
 
-function App() {
+const App = () => {
 
   const [total, setTotal] = useState([])
 
@@ -14,7 +14,7 @@ function App() {
     <>
       <Logo/>
       <Stock updateTotal={updateTotal}/>
-      <Cart/>
+      <Cart total={setTotal}/>
     </>
   );
 }

@@ -8,7 +8,7 @@ function App() {
 
   const [total, setTotal] = useState([])
 
-  const updateTotal = (item) => setTotal[item]
+  const updateTotal = (item) => setTotal([...item])
 
   return (
     <>

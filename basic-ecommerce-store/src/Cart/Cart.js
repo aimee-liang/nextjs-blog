@@ -7,16 +7,12 @@ const Cart = (props) => {
         <div className="cart">
             <h2>Your Cart</h2>
             {props.cartTotal.length ? <p>Your cart is empty</p> : null}
-            {/* display all items */}
             {props.cartTotal.map((item, index) => {
-                <CartItem
-                    key = {index}
-                    item = {item}
-                    />
+                <CartItem key = {index} item = {item} />
             })}
                 {/* and possibly increase total quantity */}
             {/* calculate total */}
-
+            <h2>Total: $</h2>
             <CardInfo/>
         </div>
     )

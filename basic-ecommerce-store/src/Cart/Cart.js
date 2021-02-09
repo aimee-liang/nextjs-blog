@@ -1,7 +1,7 @@
 import React from "react"
 import CardInfo from "./CardInfo"
 
-const Cart = () => {
+const Cart = (props) => {
     return (
         <div className="cart">
             <h2>Your Cart</h2>

@@ -14,7 +14,7 @@ const App = () => {
     <>
       <Logo/>
       <Stock updateTotal={updateTotal}/>
-      <Cart total={setTotal}/>
+      <Cart cartTotal={setTotal}/>
     </>
   );
 }

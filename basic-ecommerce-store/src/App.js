@@ -6,9 +6,9 @@ import Stock from "./Items/Stock"
 
 const App = () => {
 
-  const [total, setTotal] = useState([])
+  const [total, setTotal] = useState([]) /* should this be an object and not an array? */
 
-  const updateTotal = (item) => setTotal([...item])
+  const updateTotal = (item) => setTotal([...item]) /* have count included? */
 
   return (
     <>

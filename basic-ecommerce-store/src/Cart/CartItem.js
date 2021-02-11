@@ -13,9 +13,9 @@ const CartItem = (props) => {
                 <img alt={props.item.name} src={props.item.image} />
                 <h3>{props.item.name}</h3>
                 <h4>{props.item.price}</h4>
-                {/* trash can button to remove item altogether */}
-                <button onClick={localRemove} />
+                <Button onClick={localRemove}>🗑️ Remove From Cart</Button>
                 {/* button to increase quantity */}
+                <Button variant="contained" color="primary">+</Button>
                 {/* button to decrease quantity */}
             </div>
         </>

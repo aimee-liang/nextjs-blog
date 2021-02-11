@@ -1,11 +1,11 @@
 import React from "react"
+import Button from "@material-ui/core/Button"
 
 const CartItem = (props) => {
 
     const localRemove = () => {
         console.log(props.calculateTotal)
     }
-
 
     return(
         <>

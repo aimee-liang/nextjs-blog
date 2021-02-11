@@ -17,7 +17,6 @@ const Cart = (props) => {
             {props.cartTotal.map((item, index) => {
                 return <CartItem key = {index} item = {item} />
             })}
-                {/* and possibly increase total quantity */}
             {/* calculate total */}
             <h2>Total: $</h2>
             <CardInfo/>

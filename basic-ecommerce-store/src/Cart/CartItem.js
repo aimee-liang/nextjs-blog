@@ -7,6 +7,14 @@ const CartItem = (props) => {
         console.log(props.calculateTotal)
     }
 
+    const localIncrease = () => {
+        console.log("hello")
+    }
+
+    const localDecrease = () => {
+        console.log("goodbye!")
+    }
+
     return(
         <>
             <div className="cart-item">
@@ -14,9 +22,8 @@ const CartItem = (props) => {
                 <h3>{props.item.name}</h3>
                 <h4>{props.item.price}</h4>
                 <Button onClick={localRemove}>🗑️ Remove From Cart</Button>
-                {/* button to increase quantity */}
-                <Button variant="contained" color="primary">+</Button>
-                {/* button to decrease quantity */}
+                <Button variant="contained" color="primary" onClick={localIncrease}>+</Button>
+                <Button variant="contained" color="secondary" onClick={localDecrease}>-</Button>
             </div>
         </>
     )

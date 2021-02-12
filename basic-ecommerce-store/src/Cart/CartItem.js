@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button"
 const CartItem = (props) => {
 
     const localRemove = () => {
-        // props.calculateTotal()
+        // props.clearCart()
         return <p>"You've removed this item from your cart</p>
     }
 
@@ -29,6 +29,7 @@ const CartItem = (props) => {
                 <Button onClick={localRemove}>🗑️ Remove From Cart</Button>
                 <Button variant="contained" color="primary" onClick={localIncrease}>+</Button>
                 <Button variant="contained" color="secondary" onClick={localDecrease}>-</Button>
+                <h3>{props.calculateTotal()}</h3>
             </div>
         </>
     )

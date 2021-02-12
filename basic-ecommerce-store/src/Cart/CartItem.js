@@ -26,7 +26,7 @@ const CartItem = (props) => {
                 <img alt={props.item.name} src={props.item.image} />
                 <h3>{props.item.name}</h3>
                 <h4>{props.item.price}</h4>
-                <Button onClick={localRemove}>🗑️ Remove From Cart</Button>
+                <Button onClick={localRemove}>Remove From Cart</Button>
                 <Button variant="contained" color="primary" onClick={localIncrease}>+</Button>
                 <Button variant="contained" color="secondary" onClick={localDecrease}>-</Button>
                 <h3>{props.calculateTotal()}</h3>

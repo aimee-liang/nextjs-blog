@@ -8,6 +8,8 @@ const App = () => {
 
   const [total, setTotal] = useState([]) /* should this be an object and not an array? */
 
+  /* is each item in array an object? */
+
   const updateTotal = (item) => setTotal([...item]) /* have count included? */
 
   return (

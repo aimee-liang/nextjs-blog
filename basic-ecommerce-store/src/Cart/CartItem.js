@@ -4,14 +4,19 @@ import Button from "@material-ui/core/Button"
 const CartItem = (props) => {
 
     const localRemove = () => {
-        console.log(props.calculateTotal)
+        // props.calculateTotal()
+        return <p>"You've removed this item from your cart</p>
     }
 
     const localIncrease = () => {
+        // props.increaseQuantity()
+            /* some kind of confirmation or popup you've increased quantity? with timeout? */
         console.log("hello")
     }
 
     const localDecrease = () => {
+        // props.decreaseQuantity()
+            /* some kind of confirmation or popup you've decreased quantity? with timeout? */
         console.log("goodbye!")
     }
 

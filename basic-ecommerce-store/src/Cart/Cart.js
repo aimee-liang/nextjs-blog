@@ -4,7 +4,18 @@ import CartItem from "./CartItem"
 
 const Cart = (props) => {
 
-    // const calculateTotal = () => calculate total and pass to CartItem
+    /* calculate total and pass to CartItem
+    const calculateTotal = () => {
+
+    }
+     */
+
+    /* clears cart 
+    const clearCart = () => {
+
+    }
+
+    */
 
     // const increaseQuantity = () => increase quantity
 

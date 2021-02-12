@@ -1,5 +1,5 @@
 import React from "react"
-// need to import a library and buttons
+import Button from "@material-ui/core/Button"
 
 const Item = (props) => {
 
@@ -11,7 +11,7 @@ const Item = (props) => {
                 <h2>Jewelry Piece Name</h2>
                 <img src="" alt=""/>
                 <h5>${randomPriceGenerator}</h5>
-                <button onClick={props.localUpdate}>Click to purchase</button>
+                <Button onClick={props.localUpdate}>Click to purchase</Button>
             </div>
         </>
     )

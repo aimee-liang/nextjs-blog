@@ -10,7 +10,7 @@ const Item = (props) => {
             <h2>Jewelry Piece Name</h2>
             <img src="" alt=""/>
             <h5>${randomPriceGenerator()}</h5>
-            <Button onClick={props.localUpdate}>Click to purchase</Button>
+            <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>
         </div>
     )
 }

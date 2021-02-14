@@ -7,7 +7,7 @@ const Item = (props) => {
 
     return (
         <div className="item">
-            <h2>Jewelry Piece Name</h2>
+            <h3>Jewelry Piece Name</h3>
             <img src="" alt=""/>
             <h5>${randomPriceGenerator()}</h5>
             <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>

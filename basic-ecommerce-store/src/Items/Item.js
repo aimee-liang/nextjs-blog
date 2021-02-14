@@ -3,7 +3,7 @@ import Button from "@material-ui/core/Button"
 
 const Item = (props) => {
 
-    const randomPriceGenerator = () => Math.floor(Math.random() * 100) + 1
+    const randomPriceGenerator = () => Math.floor(Math.random() * 100) + 1 /* maybe doesn't make sense to have this since you need stable price point */
 
     return (
         <>

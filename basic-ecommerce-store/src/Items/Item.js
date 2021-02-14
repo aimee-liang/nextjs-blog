@@ -34,7 +34,7 @@ const Item = (props) => {
                 <h5>${randomPriceGenerator()}</h5>
                 <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>
             </div>
-    </>
+        </>
     )
 }
 

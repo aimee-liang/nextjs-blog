@@ -3,35 +3,33 @@ import Button from "@material-ui/core/Button"
 
 const Item = (props) => {
 
-    const randomPriceGenerator = () => Math.floor(Math.random() * 100) + 1 /* maybe doesn't make sense to have this since you need stable price point */
-
     return (
         <>
             <div className="item">
-                <h3>Jewelry Piece Name</h3>
+                <h3>Amethyst Pendant</h3>
                 <img src="/pexels-photo-965981.jpeg" alt="jewelry piece"/>
-                <h5>${randomPriceGenerator()}</h5>
+                <h5>$75.50</h5>
                 <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>
             </div>
 
             <div className="item">
-                <h3>Jewelry Piece Name</h3>
+                <h3>Forever Diamond Ring</h3>
                 <img src="/pexels-photo-998521.jpeg" alt="jewelry piece"/>
-                <h5>${randomPriceGenerator()}</h5>
+                <h5>Add to cart for details</h5>
                 <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>
             </div>
 
             <div className="item">
-                <h3>Jewelry Piece Name</h3>
+                <h3>Lapis Lazuli Bangles</h3>
                 <img src="/pexels-photo-1191536.jpeg" alt="jewelry piece"/>
-                <h5>${randomPriceGenerator()}</h5>
+                <h5>$65.50</h5>
                 <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>
             </div>
 
             <div className="item">
-                <h3>Jewelry Piece Name</h3>
+                <h3>Engagement Pairing Rings</h3>
                 <img src="/pexels-photo-1670723.jpeg" alt="jewelry piece"/>
-                <h5>${randomPriceGenerator()}</h5>
+                <h5>Add to cart for details</h5>
                 <Button variant="contained" onClick={props.localUpdate}>Click to purchase</Button>
             </div>
         </>

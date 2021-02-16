@@ -39,10 +39,11 @@
 
 .item img{
   height: 25vh;
-  width: 15vw;
+  min-width: 15vw;
   padding: 5px 5px 5px 5px;
 }
 
 .stock-page{
-  display: grid;
+  display: flex;
+  margin: auto;
 }

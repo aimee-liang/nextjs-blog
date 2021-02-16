@@ -3,6 +3,7 @@ import React, {useState} from "react"
 // import Logo from "Logo"
 import Cart from "./Cart/Cart"
 import Stock from "./Items/Stock"
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 const App = () => {
 
@@ -16,7 +17,8 @@ const App = () => {
     <>
       {/* <Logo /> */}
       <Stock updateTotal={updateTotal}/>
-      <Cart cartTotal={setTotal}/>
+      {/* <Cart cartTotal={setTotal}/> */}
+      <ShoppingCartIcon onClick = {()=> <Cart cartTotal={setTotal}/> } />
     </>
   );
 }
